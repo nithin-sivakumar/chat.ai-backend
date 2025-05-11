@@ -1,0 +1,5 @@
+services:
+  - name: app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 127.0.0.1 --port 80
