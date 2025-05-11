@@ -1,0 +1,12 @@
+# requirements.txt
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+motor # Async MongoDB driver
+groq
+python-dotenv
+python-jose[cryptography] # For potential future JWT auth, good to have
+passlib[bcrypt]         # For hashing, good practice
+pymongo # motor dependency, good to list explicitly for some envs
+uuid
